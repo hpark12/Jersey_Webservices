@@ -17,8 +17,8 @@ public class ActivityServices {
 
     @GET                                    // http://localhost:8080/Jersey_Webservices/webapi/activities
     @Produces(MediaType.APPLICATION_XML)
-    public List<Activity> getActivity(){
-        return example.GetAllActivities();
+    public String getActivity(){
+        return example.GetAllActivities().toString();
     }
 
 
