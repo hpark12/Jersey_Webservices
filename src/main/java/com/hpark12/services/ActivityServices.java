@@ -1,5 +1,6 @@
 package com.hpark12.services;
 
+import com.hpark12.dao.ActivityDao;
 import com.hpark12.dao.ActivityDaoImplementation;
 import com.hpark12.repository.Activity;
 
@@ -17,10 +18,9 @@ public class ActivityServices {
 
     @GET                                    // http://localhost:8080/Jersey_Webservices/webapi/activities
     @Produces(MediaType.APPLICATION_XML)
-    public List getActivity(){
+    public List<Activity> getAllActivities(){
         return example.GetAllActivities();
     }
-
 
 
 }
