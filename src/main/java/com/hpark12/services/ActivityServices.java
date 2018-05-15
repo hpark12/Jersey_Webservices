@@ -12,13 +12,13 @@ import java.util.List;
 @Path("activities")
 public class ActivityServices {
 
-    ActivityDaoImplementation example = new ActivityDaoImplementation();
+    static ActivityDaoImplementation example = new ActivityDaoImplementation();
 
 
     @GET                                    // http://localhost:8080/Jersey_Webservices/webapi/activities
     @Produces(MediaType.APPLICATION_XML)
-    public String getActivity(){
-        return example.GetAllActivities().toString();
+    public List getActivity(){
+        return example.GetAllActivities();
     }
 
 
