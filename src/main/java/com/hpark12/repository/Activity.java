@@ -1,10 +1,15 @@
 package com.hpark12.repository;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+
+@XmlRootElement
 public class Activity {
 
     private int activityId;
     private String activityName;
     private String duration;
+
 
     public Activity(int activityId, String activityName, String duration) {
         this.activityId = activityId;
