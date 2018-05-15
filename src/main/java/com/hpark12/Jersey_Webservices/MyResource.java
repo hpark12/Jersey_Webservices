@@ -1,4 +1,4 @@
-package com.hpark12;
+package com.hpark12.Jersey_Webservices;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -8,7 +8,7 @@ import javax.ws.rs.core.MediaType;
 /**
  * Root resource (exposed at "myresource" path)
  */
-@Path("myresource")
+@Path("myresource")   //This is the URI of this class. Therefor, //Jersey_Webservices/webapi/myresource
 public class MyResource {
 
     /**
@@ -20,6 +20,7 @@ public class MyResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String getIt() {
+
         return "Got it with the pipeline!";
     }
 }
