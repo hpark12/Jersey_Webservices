@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface ActivityDao {
 
-    public Activity findActivity();
+    public Activity findActivity(int activityId);
     List<Activity> GetAllActivities();
 
 }

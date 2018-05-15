@@ -12,6 +12,10 @@ public class Activity {
         this.duration = duration;
     }
 
+    public Activity() {
+
+    }
+
     public int getActivityId() {
         return activityId;
     }
