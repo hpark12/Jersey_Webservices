@@ -14,7 +14,7 @@ public class ActivityServices {
 
     ActivityDaoImplementation example = new ActivityDaoImplementation();
 
-    
+
     @GET                                    // http://localhost:8080/Jersey_Webservices/webapi/activities
     @Produces(MediaType.APPLICATION_XML)
     public List<Activity> getActivity(){
